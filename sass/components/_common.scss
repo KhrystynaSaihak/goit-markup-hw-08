@@ -1,0 +1,72 @@
+%flexedEl {
+    display: flex;
+    align-items: center;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    color: $primary-text-color;
+    line-height: 1.71;
+    background-color: $primary-bg-color;
+    margin: 0;
+}
+
+button {
+    display: inline-block;
+    font-family: inherit;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.advantages-section,
+.tech-section,
+.team-section,
+.portfolio-section,
+.customers-section {
+    padding-bottom: 94px;
+}
+
+.team-section,
+.advantages-section,
+.portfolio-section,
+.customers-section {
+    padding-top: 94px;
+}
+
+.list {
+    list-style: none;
+}
+
+.section-title {
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    line-height: 1.67;
+    text-align: center;
+    color: $title-color;
+    font-weight: 700;
+    margin-bottom: 50px
+}
+
