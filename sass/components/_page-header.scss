@@ -150,7 +150,22 @@
     top: 0;
     width: 100%;
     z-index: 1;
+    padding-left: 40px;
+    padding-right: 15px;
 }
+
+@media screen and (max-width:400px) {
+    .menu-container {
+        padding-left: 15px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width:767px) {
+    .menu-container {
+        padding-left: 15px;
+    }
+}
+
 
 // tablet
 
@@ -191,7 +206,7 @@
 
     .js-menu-container {
         display: inherit;
-            padding: 0;
+        padding: 0;
     }
 
     .header-section {
@@ -223,8 +238,8 @@
     }
 
     .btn-container {
-        padding-top: 25px;
-        padding-bottom: 25px;
+            padding-top: 22px;
+                padding-bottom: 22px;
     }
 
     .site-nav__link {
@@ -232,7 +247,7 @@
         &::after {
             position: relative;
             left: 0;
-            bottom: -36px;
+            bottom: -32px;
 
             background: $accent-color;
             border-radius: 2px;

@@ -1,3 +1,10 @@
+@media screen and (max-width: 1199px) {
+    .tech-section {
+        display: none;
+    }
+
+}
+
 .tech-list {
     display: flex;
     flex-direction: row;

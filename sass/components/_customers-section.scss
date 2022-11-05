@@ -1,10 +1,11 @@
 .customer-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
 .customer-list__item {
-    width: calc((100% - 150px) / 6);
+    width: calc((100% - 30px) / 2);
     height: 92px;
 }
 
@@ -32,4 +33,24 @@
     width: 106px;
     height: 60px;
     fill: currentColor;
+}
+
+// tablet
+
+@media screen and (min-width: 768px) and (max-width:1199px) {
+    .customer-list__item {
+            width: calc((100% - 60px) / 3);
+            height: 92px;
+        }
+}
+
+// tablet and fullscreen
+@media screen and (min-width: 768px) {}
+
+// fullscreen
+@media screen and (min-width:1200px) {
+    .customer-list__item {
+            width: calc((100% - 150px) / 6);
+            height: 92px;
+        }
 }

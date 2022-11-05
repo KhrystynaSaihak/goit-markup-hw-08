@@ -33,15 +33,47 @@ button {
     overflow: hidden;
 }
 
-@media screen and (max-width:767px) {
+.section-title {
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: $title-color;
+    font-weight: 700;
+}
+
+
+
+@media screen and (max-width:768px) {
     .container {
         max-width: 480px;
     }
 }
 
-@media screen and (min-width: 768px) and (max-width:1199px){
+@media screen and (max-width:1199px) {
+    .section-title {
+        font-size: 28px;
+        line-height: 1.18;
+        margin-bottom: 30px
+    }
+
+        .advantages-section,
+        .tech-section,
+        .team-section,
+        .portfolio-section,
+        .customers-section {
+            padding-bottom: 60px;
+        }
+    
+        .team-section,
+        .advantages-section,
+        .portfolio-section,
+        .customers-section {
+            padding-top: 60px;
+        }
+}
+
+@media screen and (min-width: 768px) and (max-width:1199px) {
     .container {
-        max-width: 738px;
+        max-width: 768px;
     }
 }
 
@@ -49,41 +81,37 @@ button {
     .container {
         max-width: 1200px;
     }
+
+    .section-title {
+        font-size: 36px;
+        line-height: 1.67;
+        margin-bottom: 50px
+    }
+
+        .advantages-section,
+        .tech-section,
+        .team-section,
+        .portfolio-section,
+        .customers-section {
+            padding-bottom: 94px;
+        }
+    
+        .team-section,
+        .advantages-section,
+        .portfolio-section,
+        .customers-section {
+            padding-top: 94px;
+        }
 }
+
 .container {
-    // width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
 }
 
-.advantages-section,
-.tech-section,
-.team-section,
-.portfolio-section,
-.customers-section {
-    padding-bottom: 94px;
-}
-
-.team-section,
-.advantages-section,
-.portfolio-section,
-.customers-section {
-    padding-top: 94px;
-}
 
 .list {
     list-style: none;
 }
-
-.section-title {
-    font-size: 36px;
-    letter-spacing: 0.03em;
-    line-height: 1.67;
-    text-align: center;
-    color: $title-color;
-    font-weight: 700;
-    margin-bottom: 50px
-}
-
