@@ -3,8 +3,11 @@
     padding-bottom: 60px;
     background-color: $section-color;
 
-    .first-colmn,
-    .second-colmn {
+    .first-colmn {
+        margin-bottom: 60px;
+    }
+
+    .tablet-container{
         margin-bottom: 60px;
     }
 
@@ -134,9 +137,10 @@
         .tablet-container {
             display: flex;
             gap: 165px;
-            padding-left: 74px;
-            padding-right: 74px;
+            justify-content: center;
         }
+
+                      
 
         .form__input {
             width: 450px;
@@ -146,7 +150,11 @@
 
 // tablet and fullscreen
 @media screen and (min-width: 768px) {
-    .footer-section {}
+    .footer-section {
+        .first-colmn {
+                margin-bottom: 0px;
+        }
+    }
 }
 
 // fullscreen
@@ -162,15 +170,11 @@
             display: flex;
             gap: 93px;
             align-items: baseline;
+            margin-bottom: 0;
         }
 
         .colm-title {
             text-align: left;
-        }
-
-        .first-colmn,
-        .second-colmn {
-            margin-bottom: 0;
         }
 
         .logo--white,
